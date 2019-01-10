@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: '新前端',
     description: '收集整理知识、见识、见闻，陪伴程序员前进',
-    siteUrl: 'https://1byte.io'
+    siteUrl: 'https://nextfe.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet',

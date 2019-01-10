@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
 import { headerNavStyle } from '../styles';
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, description }) => (
   <div
     style={{
       marginBottom: '1.45rem'
@@ -37,12 +37,14 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <h4 style={{ marginTop: '1em' }}>{description}</h4>
     </div>
   </div>
 );
 
 Header.propTypes = {
-  siteTitle: PropTypes.string
+  siteTitle: PropTypes.string,
+  description: PropTypes.string
 };
 
 export default Header;
