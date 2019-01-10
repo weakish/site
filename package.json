@@ -1,0 +1,54 @@
+{
+  "name": "nextfe.com",
+  "description": "The Next Frontend",
+  "version": "1.0.0",
+  "author": "Hong Jiang <hjiang@leancloud.rocks>",
+  "dependencies": {
+    "gatsby": "^2.0.8",
+    "gatsby-link": "^2.0.1",
+    "gatsby-plugin-feed": "^2.0.5",
+    "gatsby-plugin-glamor": "^2.0.5",
+    "gatsby-plugin-google-analytics": "^2.0.6",
+    "gatsby-plugin-netlify": "^2.0.4",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.5",
+    "gatsby-plugin-typography": "^2.2.0",
+    "gatsby-remark-copy-linked-files": "^2.0.5",
+    "gatsby-remark-images": "^2.0.2",
+    "gatsby-remark-prismjs": "^3.0.0",
+    "gatsby-source-filesystem": "^2.0.1",
+    "gatsby-transformer-remark": "^2.1.3",
+    "gatsby-transformer-sharp": "^2.1.2",
+    "glamor": "^2.20.40",
+    "prismjs": "^1.15.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-helmet": "^5.2.0",
+    "react-mailchimp-subscribe": "^2.0.2",
+    "react-tinyletter": "^0.3.2",
+    "react-typography": "^0.16.13",
+    "typography": "^0.16.17",
+    "typography-theme-moraga": "^0.15.10"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "node_modules/.bin/gatsby build",
+    "develop": "node_modules/.bin/gatsby develop",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "node_modules/.bin/eslint *.js src/**/*.js",
+    "lint:fix": "node_modules/.bin/eslint --fix *.js src/**/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "gatsby-cli": "^2.4.1"
+  }
+}

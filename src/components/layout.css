@@ -1,0 +1,23 @@
+pre[class*="language-"]:before, pre[class*="language-"]:after {
+  box-shadow: none
+}
+
+article {
+  letter-spacing: normal;
+  line-height: 1.7;
+}
+
+.article-list-item time {
+  font-size: small;
+  color: hsla(0,0%,0%,0.4);
+}
+
+article time {
+  color: hsla(0,0%,0%,0.4);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+article h2 {
+  margin-top: 1.56rem;
+}
