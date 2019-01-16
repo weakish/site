@@ -107,7 +107,7 @@ cat cast.json | svg-term-cli
 
 ## `wrk` 测试 HTTP API 性能
 
-`wrk` (<https://github.com/wg/wrk>) 是个方便的小工具，可以测试 API 性能。为了演示它的用法，我在本地的 8001 端口运行了一个最小化的 Python HTTP API 服务器，它只有一个端点（`/hello`）。用 `wrk` 测试它的性能（5 秒内，使用 12 个线程发起 200 个连接）：
+`wrk` (<https://git.io/fhW1t>) 是个方便的小工具，可以测试 API 性能。为了演示它的用法，我在本地的 8001 端口运行了一个最小化的 Python HTTP API 服务器，它只有一个端点（`/hello`）。用 `wrk` 测试它的性能（5 秒内，使用 12 个线程发起 200 个连接）：
 
 ![wrk](https://darrenburns.net/wrk-f2cef144344b219b0ed3398ea1727cb3.svg)
 
