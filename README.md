@@ -1,26 +1,13 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# 新前端
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+收集整理知识、见识、见闻，陪伴程序员前进
 
-## Install
+## 本地预览
 
-Make sure that you have the Gatsby CLI program installed:
+本站基于 [Gatsby](https://www.gatsbyjs.org/) 搭建。
+
 ```sh
 npm install --global gatsby-cli
-```
-
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
-```
-
-Then you can run it by:
-```sh
-cd gatsby-example-site
+npm install
 npm run develop
 ```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
