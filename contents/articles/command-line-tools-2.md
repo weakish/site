@@ -13,7 +13,7 @@ tags:
 
 ## `peco` 交互式过滤
 
-将任何命令的输出通过管道传给 `peco` (<https://git.io/Pwz8GA>)，便能交互式地过滤输出，查找所需信息。你可以把它想成交互式 `grep`，随着输入实时更新结果，让搜索过程更直观。
+将任何命令的输出通过管道传给 [peco](https://git.io/Pwz8GA)，便能交互式地过滤输出，查找所需信息。你可以把它想成交互式 `grep`，随着输入实时更新结果，让搜索过程更直观。
 
 ![peco](https://darrenburns.net/peco-processes-e31d5338bae787510ce8e39ad394bdb0.gif)
 
@@ -27,7 +27,7 @@ tags:
 
 ## `hexyl` 十六进制查看器
 
-检查二进制文件时通常查看文件的十六进制表示。`hexyl` (https://git.io/fhnd7) 是个命令行下的十六进制查看器。
+检查二进制文件时通常查看文件的十六进制表示。[hexyl](https://git.io/fhnd7) 是个命令行下的十六进制查看器。
 
 ![hexyl](https://darrenburns.net/hexyl-no-less-95d319279084793ad8bba3e3fd6acf2d.gif)
 
@@ -63,7 +63,7 @@ tags:
 
 ![pomo](https://darrenburns.net/pomo-2a74022e8fdf4e05976d9f04ef381f4c.gif)
 
-`pomo` (<https://git.io/fhnFr>) 是一个简单的命令行工具，助你依照番茄工作法管理时间。
+[pomo](https://git.io/fhnFr) 是一个简单的命令行工具，助你依照番茄工作法管理时间。
 
 ### 安装 `pomo`
 
@@ -76,7 +76,7 @@ tags:
 
 ## `ncdu` 分析、清理磁盘空间
 
-如果你的计算机上有很多项目，最近也没有清理过磁盘。那么你几乎一定能找到一个占用大量磁盘的文件夹（我发现旧项目的 `node_modules` 文件夹特别容易占用大量空间）。`ncdu` (https://dev.yorhel.nl/ncdu) 是我最爱的修复工具。事实上，在创建下面的 `ncdu` 演示例子时，我清理了 10 GiB 的磁盘空间！
+如果你的计算机上有很多项目，最近也没有清理过磁盘。那么你几乎一定能找到一个占用大量磁盘的文件夹（我发现旧项目的 `node_modules` 文件夹特别容易占用大量空间）。[ncdu](https://dev.yorhel.nl/ncdu) 是我最爱的修复工具。事实上，在创建下面的 `ncdu` 演示例子时，我清理了 10 GiB 的磁盘空间！
 
 ![ncdu](https://darrenburns.net/ncdu-d9e7172fd2a64a0ca6205f0de2f17b7a.gif)
 
@@ -90,7 +90,7 @@ tags:
 
 ## HTTPie `curl` 的现代替代品
 
-HTTPie (<https://httpie.org/>) 是一个更简单（不像 `curl`，每次使用都要 Google 下用法）、功能更多、更美观的 `curl` 替代品，可以在命令行调用 HTTP 的 API。到目前为止，我介绍的工具中，它是最流行的，而且有[很精良的文档]。
+[HTTPie](https://httpie.org/) 是一个更简单（不像 `curl`，每次使用都要 Google 下用法）、功能更多、更美观的 `curl` 替代品，可以在命令行调用 HTTP 的 API。到目前为止，我介绍的工具中，它是最流行的，而且有[很精良的文档]。
 
 [很精良的文档]: https://httpie.org/doc
 

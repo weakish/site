@@ -13,7 +13,7 @@ tags:
 
 ## `tig` 交互式地浏览 git 仓库
 
-有了 `tig` (<https://git.io/FkX-Mw>)，无需离开命令行，就能交互式地浏览 git 仓库。
+有了 [tig](https://git.io/FkX-Mw)，无需离开命令行，就能交互式地浏览 git 仓库。
 
 ![tig](https://darrenburns.net/tig-cb475140e22bbb7f227d7e03f9050556.gif)
 
@@ -31,7 +31,7 @@ tags:
 
 ## PathPicker (`fpp`) 快速选择文件
 
-PathPicker (<https://git.io/fh8nL>) 是由 Facebook 推出的命令行文件速选库。下面的动画摘自 PathPicker 文档。
+[PathPicker](https://git.io/fh8nL) 是由 Facebook 推出的命令行文件速选库。下面的动画摘自 PathPicker 文档。
 
 ![fpp](https://darrenburns.net/fpp-217fdcd6bcffaa605df85f31e8d84d79.gif)
 
@@ -51,7 +51,7 @@ PathPicker (<https://git.io/fh8nL>) 是由 Facebook 推出的命令行文件速�
 
 ## `tldr` 使用命令行工具的实用示例
 
-`tldr` (<https://git.io/fh8lY>) 助你快速查看使用命令行工具的实际示例。简而言之，「tl;dr」版本的 man 页面。
+[tldr](https://git.io/fh8lY) 助你快速查看使用命令行工具的实际示例。简而言之，「tl;dr」版本的 man 页面。
 
 ![tldr](https://darrenburns.net/tldr-2662bd95c1c70e53892d857a3ea990ce.gif)
 
@@ -66,7 +66,7 @@ PathPicker (<https://git.io/fh8nL>) 是由 Facebook 推出的命令行文件速�
 
 ## `gron` 查看 JSON
 
-`gron` (<https://git.io/fh84V>) 将 JSON 文本转换为离散的赋值语句，以便查找。我特别喜欢组合 `fzf` 使用（我在本系列的第一篇文章中提到过这个工具），这样可以交互式地查看 API：
+[gron](https://git.io/fh84V) 将 JSON 文本转换为离散的赋值语句，以便查找。我特别喜欢组合 `fzf` 使用（我在本系列的第一篇文章中提到过这个工具），这样可以交互式地查看 API：
 
 ![gron](https://darrenburns.net/gron-with-fzf-40ffb9ae640c6b9e89fd95de3ad88b0e.gif)
 
@@ -81,7 +81,7 @@ PathPicker (<https://git.io/fh8nL>) 是由 Facebook 推出的命令行文件速�
 
 ## thefuck 快速修正命令行手误
 
-输入命令时拼错了，输入 `fuck` (<https://git.io/vvbnZ>) ，thefuck 会给出一些候选的正确命令。
+输入命令时拼错了，输入 [fuck](https://git.io/vvbnZ) ，thefuck 会给出一些候选的正确命令。
 
 ![thefuck](https://darrenburns.net/thefuck-7ed922a3cb4d321b0f872818ee3c5162.gif)
 
@@ -93,7 +93,7 @@ PathPicker (<https://git.io/fh8nL>) 是由 Facebook 推出的命令行文件速�
 
 ## 额外福利：explainshell，解释命令
 
-如果你手头有一行很复杂的命令，想要了解它做了什么，又不想一个个查 `man` 或 `tldr`，那么你可以使用 explainshell (<https://explainshell.com>)：
+如果你手头有一行很复杂的命令，想要了解它做了什么，又不想一个个查 `man` 或 `tldr`，那么你可以使用 [explainshell](https://explainshell.com)：
 
 ![explainshell](https://darrenburns.net/static/explain_shell-0edc1706c18af98816645e6b2db89607-c83f1.png)
 

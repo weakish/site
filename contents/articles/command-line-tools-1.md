@@ -14,7 +14,7 @@ tags:
 
 现代浏览器地址栏可以智能模糊搜索，节省了大量时间。想要刷下推特？只需在地址栏输入「tw」然后回车。
 
-相比之下，在命令行下使用 `cd` 访问文件系统，方式就太陈旧了。谢天谢地，`z` (<https://git.io/uyrp2Q>) 给命令行带来了浏览器风格的导航。
+相比之下，在命令行下使用 `cd` 访问文件系统，方式就太陈旧了。谢天谢地，[z](https://git.io/uyrp2Q) 给命令行带来了浏览器风格的导航。
 
 ![z](https://darrenburns.net/jump_around-987b878944e690843afd549b81a76be6.svg)
 
@@ -22,7 +22,7 @@ tags:
 
 `z` 不仅提高了速度，还降低了认知负担。使用 `cd` 时，你需要准确回忆目标目录在目录树的位置，并计算到达目录的路径。有了 `z`，只需知道目录的名称。
 
-`z` 也已经移植到了其他 shell （例如 fish 和 zsh）。类似的项目有 `autojump` (<https://git.io/fhZ20>)。
+`z` 也已经移植到了其他 shell （例如 fish 和 zsh）。类似的项目有 [autojump](https://git.io/fhZ20)。
 
 ### 安装 `z`
 
@@ -35,7 +35,7 @@ tags:
 
 ## `fzf` 快速模糊搜寻器
 
-安装 `fzf` (<https://git.io/C4FBDw>) 后，在命令行的任何地方按下 `Ctrl + T`，就可以开启交互式模糊搜索界面，递归搜索当前目录下的文件。输入搜索项后，上、下键选择结果，回车上屏：
+安装 [fzf](https://git.io/C4FBDw) 后，在命令行的任何地方按下 `Ctrl + T`，就可以开启交互式模糊搜索界面，递归搜索当前目录下的文件。输入搜索项后，上、下键选择结果，回车上屏：
 
 ![fzf](https://darrenburns.net/fzf-54dfd83c8f95d32152c9c2da2bba488d.svg)
 
@@ -48,7 +48,7 @@ tags:
 
 ## `bat` 带语法高亮的文件查看
 
-`bat` (<https://git.io/vhrn7>) 助你快速查看文件，有语法高亮。`bat` 可以无缝替换 `cat`。
+[bat](https://git.io/vhrn7) 助你快速查看文件，有语法高亮。`bat` 可以无缝替换 `cat`。
 
 ![bat](https://darrenburns.net/bat-ff214ee3bcfdc35c6cf67e95f4b3004c.svg)
 
@@ -60,7 +60,7 @@ tags:
 
 ## `bench` 代码性能测试
 
-`bench` (<https://git.io/fhZwU>) 是极为有用的测试代码性能的工具。它是用 Haskell 写的，从这点上说，算是这篇文章中最酷的。任何可以在终端中运行的命令都可以传给它（加引号），`bench` 会重复运行该命令，测量执行时间。测试完成后，`bench` 会输出有用的统计数据。
+[bench](https://git.io/fhZwU) 是极为有用的测试代码性能的工具。它是用 Haskell 写的，从这点上说，算是这篇文章中最酷的。任何可以在终端中运行的命令都可以传给它（加引号），`bench` 会重复运行该命令，测量执行时间。测试完成后，`bench` 会输出有用的统计数据。
 
 ![bench](https://darrenburns.net/bench-bfdf5ac0c5538d3c068390d2e42ac95e.svg)
 
@@ -81,11 +81,11 @@ tags:
 - 文件较小 🧐
 - SVG 动画比视频酷太多 🔥
 
-我使用 `asciinema` (<https://asciinema.org/>) 录制终端。输入 `asciinema rec` 即可开始录制。完成后按 `Ctrl+D`，选择本地保存或上传 [asciinema.org](https://asciinema.org/)
+我使用 [asciinema](https://asciinema.org/) 录制终端。输入 `asciinema rec` 即可开始录制。完成后按 `Ctrl+D`，选择本地保存或上传 [asciinema.org](https://asciinema.org/)
 
 ![asciinema](https://darrenburns.net/asciinema_example-e1488b9806f360b88391a244d2354cf2.svg)
 
-`svg-term` (<https://git.io/fhZrE>) 可以根据 `asciinema` 录制文件生成 SVG 动画。如果你将录制文件上传到了 asciinema，需要访问 asciinema 链接将其设为公开。
+[svg-term](https://git.io/fhZrE) 可以根据 `asciinema` 录制文件生成 SVG 动画。如果你将录制文件上传到了 asciinema，需要访问 asciinema 链接将其设为公开。
 
 转换录制文件为 SVG 动画，需要提供录制 ID （公开 asciinema 页面后可以在 URL 中找到 ID），输出文件名，还有其他一些可选参数。例如，我使用如下命令将上面例子中的终端录制 (https://asciinema.org/a/219486) 转换为 SVG 文件：
 
@@ -107,7 +107,7 @@ cat cast.json | svg-term-cli
 
 ## `wrk` 测试 HTTP API 性能
 
-`wrk` (<https://git.io/fhW1t>) 是个方便的小工具，可以测试 API 性能。为了演示它的用法，我在本地的 8001 端口运行了一个最小化的 Python HTTP API 服务器，它只有一个端点（`/hello`）。用 `wrk` 测试它的性能（5 秒内，使用 12 个线程发起 200 个连接）：
+[wrk](https://git.io/fhW1t) 是个方便的小工具，可以测试 API 性能。为了演示它的用法，我在本地的 8001 端口运行了一个最小化的 Python HTTP API 服务器，它只有一个端点（`/hello`）。用 `wrk` 测试它的性能（5 秒内，使用 12 个线程发起 200 个连接）：
 
 ![wrk](https://darrenburns.net/wrk-f2cef144344b219b0ed3398ea1727cb3.svg)
 
@@ -121,7 +121,7 @@ cat cast.json | svg-term-cli
 
 ## `exa` 替代 `ls`
 
-`exa` (<https://the.exa.website/>) 是 `ls` 的现代替代品，其彩色输出更为易读，并提供了更多控制输出如何呈现的选项。
+[exa](https://the.exa.website/) 是 `ls` 的现代替代品，其彩色输出更为易读，并提供了更多控制输出如何呈现的选项。
 
 ![exa](https://darrenburns.net/exa-c640a48d016bf7391d213c660b4fbe8a.svg)
 
@@ -133,7 +133,7 @@ cat cast.json | svg-term-cli
 
 ## `fd` 查找文件和目录
 
-通常使用 `find` 命令基于正则表达式查找文件或目录。`fd` (<https://git.io/fwls2>) 是用 Rust 编写的 `find` 替代品。使用合理的默认值，提供更方便的界面，速度也更快。
+通常使用 `find` 命令基于正则表达式查找文件或目录。[fd](https://git.io/fwls2) 是用 Rust 编写的 `find` 替代品。使用合理的默认值，提供更方便的界面，速度也更快。
 
 ![fd](https://darrenburns.net/fd-a358bee3a37ed6740896446863857a5f.svg)
 
@@ -149,7 +149,7 @@ fd -e jpg -x convert {} {.}.png
 
 ## `rg` (ripgrep) 查找文件中的字符串
 
-`rg` (<https://git.io/vPvif>) 是 `grep` 的替代品，它比 `grep` 快很多。
+[rg](https://git.io/vPvif) 是 `grep` 的替代品，它比 `grep` 快很多。
 
 ![rg](https://darrenburns.net/rg-9e3bbb621ceb9d4a5a84fbc4816fe702.svg)
 
