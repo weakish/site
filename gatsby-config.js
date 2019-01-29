@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: '新前端',
+    title: 'New Frontend',
     description: '收集整理知识、见识、见闻，陪伴程序员前进',
     siteUrl: 'https://nextfe.com'
   },
