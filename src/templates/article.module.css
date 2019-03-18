@@ -19,6 +19,22 @@
   margin-bottom: 1rem;
 }
 
+.articleContainer article h2 {
+  font-size: 2.0rem;
+  font-weight: bold;
+  color: var(--text-color1);
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.articleContainer article h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--text-color1);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 .articleContainer article time {
   font-size: 1.4rem;
   color: var(--text-grey);
@@ -36,6 +52,11 @@
 
 .articleBody code {
   font-size: 1.6rem;
+}
+
+.articleBody blockquote {
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
 
 .subscribeBox {
