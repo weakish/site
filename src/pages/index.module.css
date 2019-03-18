@@ -1,0 +1,25 @@
+.container {
+  display: grid;
+  grid-template-areas:
+  "first second subscribe"
+  "first third  subscribe"
+  "rest rest empty"
+}
+
+.article
+
+.article:nth-child(1) {
+  grid-area: first;
+}
+
+.article:nth-child(2) {
+  grid-area: second;
+}
+
+.article:nth-child(3) {
+  grid-area: third;
+}
+
+.article:nth-child(n+4) {
+  grid-area: rest;
+}

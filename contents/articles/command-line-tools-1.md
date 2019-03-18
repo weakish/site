@@ -2,6 +2,7 @@
 title: 优秀的命令行工具（一）
 date: 2019-01-11
 tags:
+coverImage: "./images/cmdline-tools-1-cover.png"
 ---
 
 [Darren Burns] 原作， 授权 LeanCloud 翻译。

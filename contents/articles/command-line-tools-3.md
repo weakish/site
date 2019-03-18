@@ -2,6 +2,7 @@
 title: 优秀的命令行工具（三）
 date: 2019-01-17
 tags:
+coverImage: "./images/cmdline-tools-3-cover.png"
 ---
 
 

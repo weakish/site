@@ -2,6 +2,7 @@
 title: 什么是 10x 程序员
 date: 2018-12-05
 tags:
+coverImage: "./images/10x-cover.jpg"
 ---
 
 [英文原文](http://antirez.com/news/112)

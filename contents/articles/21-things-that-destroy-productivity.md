@@ -2,6 +2,7 @@
 title: 破坏程序员生产力的 12 件事
 date: 2018-12-24
 tags:
+coverImage: "./images/21things-productivity-cover.png"
 ---
 
 原文转载自 [John Lafleur](https://anaxi.com/blog/2018/10/15/top-12-things-that-destroy-developer-productivity/)，LeanCloud 经授权进行翻译。

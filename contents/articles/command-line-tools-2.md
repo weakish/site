@@ -2,6 +2,7 @@
 title: 优秀的命令行工具（二）
 date: 2019-01-14
 tags:
+coverImage: "./images/cmdline-tools-2-cover.jpg"
 ---
 
 
