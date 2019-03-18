@@ -5,15 +5,15 @@ import headerStyles from './header.module.css'
 import logoImage from './assets/logo@2x.png'
 
 const Header = ({ siteTitle, description }) => (
-  <nav class={headerStyles.topNav}>
+  <nav className={headerStyles.topNav}>
     <div>
       <Link to="/">
         <h1>
           <img src={logoImage} alt="Logo" />
-          <span class={headerStyles.siteName}>{siteTitle}</span>
+          <span className={headerStyles.siteName}>{siteTitle}</span>
         </h1>
       </Link>
-      <Link class={headerStyles.submitButton} to="mailto:newfrontendweekly0@163.com">文章投稿</Link>
+      <Link className={headerStyles.submitButton} to="mailto:newfrontendweekly0@163.com">文章投稿</Link>
     </div>
   </nav>
 )

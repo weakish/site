@@ -1,33 +1,38 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import MailchimpSubscribe from "react-mailchimp-subscribe"
-import Helmet from 'react-helmet';
-import { graphql } from 'gatsby';
-import Layout from '../components/layout';
+import React from 'react'
+import PropTypes from 'prop-types'
+import MailchimpSubscribe from 'react-mailchimp-subscribe'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
+import Layout from '../components/layout'
+import articleStyles from './article.module.css'
 
 const Article = ({ data }) => {
-  const article = data.markdownRemark;
-  const contentId = article.fields.slug.split('/').join('');
+  const article = data.markdownRemark
+  const contentId = article.fields.slug.split('/').join('')
   return (
     <Layout>
-      <article>
-        <Helmet title={article.frontmatter.title} />
-        <h1>{article.frontmatter.title}</h1>
-        <time dateTime={article.frontmatter.date}>{article.frontmatter.date}</time>
-        <div dangerouslySetInnerHTML={{ __html: article.html }} />
-        <hr />
-        <p>填写邮箱订阅我们的最新内容：</p>
-        <MailchimpSubscribe url="https://jishuq.us17.list-manage.com/subscribe/post?u=3c5403dbe4d67ff90fa5ff1ec&amp;id=248ba7cad4"/>
-      </article>
+      <div className={articleStyles.articleContainer}>
+        <article>
+          <Helmet title={article.frontmatter.title} />
+          <h1>{article.frontmatter.title}</h1>
+          <time dateTime={article.frontmatter.date}>
+            {article.frontmatter.date}
+          </time>
+          <div className={articleStyles.articleBody} dangerouslySetInnerHTML={{ __html: article.html }} />
+          <hr />
+          <p>填写邮箱订阅我们的最新内容：</p>
+          <MailchimpSubscribe url="https://jishuq.us17.list-manage.com/subscribe/post?u=3c5403dbe4d67ff90fa5ff1ec&amp;id=248ba7cad4" />
+        </article>
+      </div>
     </Layout>
-  );
-};
+  )
+}
 
 Article.propTypes = {
-  data: PropTypes.object
-};
+  data: PropTypes.object,
+}
 
-export default Article;
+export default Article
 
 export const query = graphql`
   query ArticleQuery($slug: String!) {
@@ -42,4 +47,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

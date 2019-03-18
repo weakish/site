@@ -6,7 +6,9 @@ import Img from 'gatsby-image'
 import BackgroundImage from 'gatsby-background-image'
 
 import Layout from '../components/layout'
+import SubscribeForm from '../components/subscribe-form'
 import indexStyles from './index.module.css'
+import subscribeFormStyles from '../components/subscribe-form.module.css'
 
 const IndexPage = ({ data }) => {
   const articles = data.allMarkdownRemark.edges
@@ -26,12 +28,9 @@ const IndexPage = ({ data }) => {
           </BackgroundImage>
         ))}
         <section className={indexStyles.subscribeBox}>
-          <h2>文章订阅</h2>
-          <form>
-            <input type="text" placeholder="输入您的邮箱地址" />
-            <p>我们绝不会分享您的电子邮件地址。您可以随时退订。</p>
-            <input type="submit" value="提交订阅" />
-          </form>
+          <div className={subscribeFormStyles.VerticalSubscribeForm}>
+            <SubscribeForm />
+          </div>
         </section>
       </section>
       <section className={indexStyles.remainingArticles}>
@@ -41,12 +40,15 @@ const IndexPage = ({ data }) => {
             to={node.fields.slug}
             className={indexStyles.articleLink}
           >
-            <Img
-              className={indexStyles.articleImage}
+            <BackgroundImage
+              Tag="div"
               fluid={node.frontmatter.coverImage.childImageSharp.fluid}
+              key={node.fields.slug}
+              className={indexStyles.articleImage}
             />
             <div className={indexStyles.articleInfo}>
               <h3>{node.frontmatter.title}</h3>
+              <p className={indexStyles.summary}>{node.frontmatter.summary}</p>
               <time dateTime={node.frontmatter.date}>
                 {node.frontmatter.date}
               </time>
@@ -77,6 +79,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "YYYY-MM-DD")
+            summary
             coverImage {
               childImageSharp {
                 fluid(maxWidth: 520) {
