@@ -4,6 +4,7 @@
   display: grid;
   grid-template-areas: "main side";
   grid-template-columns: 78.4rem auto;
+  grid-column-gap: 1rem;
   margin-top: 2rem;
 }
 
@@ -37,3 +38,9 @@
   font-size: 1.6rem;
 }
 
+.subscribeBox {
+  grid-area: side;
+  height: 29.4rem;
+  position: sticky;
+  top: 0;
+}

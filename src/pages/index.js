@@ -8,7 +8,6 @@ import BackgroundImage from 'gatsby-background-image'
 import Layout from '../components/layout'
 import SubscribeForm from '../components/subscribe-form'
 import indexStyles from './index.module.css'
-import subscribeFormStyles from '../components/subscribe-form.module.css'
 
 const IndexPage = ({ data }) => {
   const articles = data.allMarkdownRemark.edges
@@ -28,9 +27,7 @@ const IndexPage = ({ data }) => {
           </BackgroundImage>
         ))}
         <section className={indexStyles.subscribeBox}>
-          <div className={subscribeFormStyles.VerticalSubscribeForm}>
-            <SubscribeForm />
-          </div>
+          <SubscribeForm />
         </section>
       </section>
       <section className={indexStyles.remainingArticles}>

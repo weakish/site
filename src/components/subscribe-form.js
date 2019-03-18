@@ -1,4 +1,5 @@
 import React from 'react'
+import SubscribeFormStyles from './subscribe-form.module.css'
 
 const SubscribeForm = () => (
   <form
@@ -6,9 +7,8 @@ const SubscribeForm = () => (
     method="post"
     id="mc-embedded-subscribe-form"
     name="mc-embedded-subscribe-form"
-    className="validate"
+    className={SubscribeFormStyles.VerticalSubscribeForm}
     target="_blank"
-    noValidate
   >
     <h2>文章订阅</h2>
     <div className="mc-field-group">

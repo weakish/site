@@ -4,6 +4,8 @@ import MailchimpSubscribe from 'react-mailchimp-subscribe'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
+import SubscribeForm from '../components/subscribe-form'
+
 import articleStyles from './article.module.css'
 
 const Article = ({ data }) => {
@@ -18,11 +20,14 @@ const Article = ({ data }) => {
           <time dateTime={article.frontmatter.date}>
             {article.frontmatter.date}
           </time>
-          <div className={articleStyles.articleBody} dangerouslySetInnerHTML={{ __html: article.html }} />
-          <hr />
-          <p>填写邮箱订阅我们的最新内容：</p>
-          <MailchimpSubscribe url="https://jishuq.us17.list-manage.com/subscribe/post?u=3c5403dbe4d67ff90fa5ff1ec&amp;id=248ba7cad4" />
+          <div
+            className={articleStyles.articleBody}
+            dangerouslySetInnerHTML={{ __html: article.html }}
+          />
         </article>
+        <div className={articleStyles.subscribeBox}>
+          <SubscribeForm />
+        </div>
       </div>
     </Layout>
   )

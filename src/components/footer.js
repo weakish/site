@@ -1,16 +1,19 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import { footerStyle, footerNavStyle } from '../styles';
+import footerStyles from './footer.module.css';
 
 const Footer = () => (
-  <div css={footerStyle}>
-    <nav css={footerNavStyle}>
+  <div className={footerStyles.footer}>
+    <p>
+      &copy; nextfe.com 2018 - 2019. All rights reserved.
+    </p>
+    <nav>
       <ul>
         <li>
           <Link to='/'>首页</Link>
         </li>
         <li>
-          <Link to='/subscribe/'>订阅邮件列表</Link>
+          <Link to='mailto:newfrontendweekly0@163.com'>联系我们</Link>
         </li>
       </ul>
     </nav>

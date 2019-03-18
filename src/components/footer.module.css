@@ -1,0 +1,18 @@
+@import './constants.css';
+
+.footer {
+  background-color: var(--background-grey-dark);
+  color: car(--text-color1);
+  font-size: 1.4rem;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.footer nav ul {
+  list-style: none;
+}
+
+.footer nav li {
+  display: inline-block;
+  margin: 0 1rem 3rem 1rem  ;
+}
