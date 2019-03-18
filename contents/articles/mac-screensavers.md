@@ -2,6 +2,8 @@
 title: 七款酷炫的 Mac 屏保
 date: 2019-02-26
 tags:
+coverImage: "./images/mac-screensavers-cover.png"
+summary: 你的桌面屏保是什么？
 ---
 
 [Ankur Biswas] 原作，授权 LeanCloud 翻译。

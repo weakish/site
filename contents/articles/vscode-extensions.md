@@ -1,7 +1,9 @@
 ---
 title: 优秀的 VS Code 前端开发扩展
-date: 20190301
+date: 2019-03-01
 tags:
+coverImage: "./images/vsc-plugins-cover.png"
+summary: 前端为主的开发者，想高效使用 Visual Studio Code，我觉得这个列表会很有帮助。
 ---
 
 [Alexander Romano] 原作，授权 LeanCloud 翻译。
