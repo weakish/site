@@ -1,0 +1,44 @@
+@import './constants.css';
+
+.topNav {
+  height: 8rem;
+  border-bottom: 1px solid var(--background-grey-dark);
+}
+
+.topNav img {
+  margin: 0;
+  /* display: inline-block; */
+  vertical-align: middle;
+}
+
+.topNav > div {
+  max-width: var(--page-max-width);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.topNav h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.topNav a:hover {
+  text-decoration: none;
+}
+
+.siteName {
+  margin-left: 1rem;
+  color: var(--text-color1);
+}
+
+.submitButton {
+  color: var(--text-color2);
+  font-size: 1.6rem;
+  border: solid var(--text-grey) 0.5px;
+  border-radius: 4px;
+  padding: 0.5rem 2.5rem;
+}

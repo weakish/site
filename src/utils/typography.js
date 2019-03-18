@@ -9,9 +9,6 @@ moragaTheme.overrideThemeStyles = () => ({
   '.js-system--apple': {
     fontFeatureSettings: "case, ss01, ss02"
   },
-  a: {
-    color: '#3090e4'
-  },
   '[lang=zh],[lang=ja]': {
     textAlign: 'start',
     header: {
