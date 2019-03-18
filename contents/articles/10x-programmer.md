@@ -3,6 +3,7 @@ title: 什么是 10x 程序员
 date: 2018-12-05
 tags:
 coverImage: "./images/10x-cover.jpg"
+summary: 编程社区对于这种动物是否存在有两极分化的看法：有的人认为根本不存在，有的人却认为不仅存在 10x 程序员，如果你知道怎么寻找的话，甚至能找到 100x 程序员。
 ---
 
 [英文原文](http://antirez.com/news/112)

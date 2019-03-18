@@ -3,6 +3,7 @@ title: 破坏程序员生产力的 12 件事
 date: 2018-12-24
 tags:
 coverImage: "./images/21things-productivity-cover.png"
+summary: 当你试图提高程序员的效率时，首先要搞清楚效率是怎么变慢的，清楚原因后再来提团队效率。虽然 Peopleware 在 30 年前就发表了，但很多团队依旧会出现精力浪费和效率低下的问题。
 ---
 
 原文转载自 [John Lafleur](https://anaxi.com/blog/2018/10/15/top-12-things-that-destroy-developer-productivity/)，LeanCloud 经授权进行翻译。

@@ -3,6 +3,7 @@ title: 优秀的命令行工具（一）
 date: 2019-01-11
 tags:
 coverImage: "./images/cmdline-tools-1-cover.png"
+summary: 我打算写一系列文章，展示下近些年发现的一些很棒的非标准命令行工具，这是第一篇。如果你用命令行，那么这些工具中大概至少有一个能让你的生活更舒心。
 ---
 
 [Darren Burns] 原作， 授权 LeanCloud 翻译。

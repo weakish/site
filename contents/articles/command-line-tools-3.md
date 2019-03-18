@@ -3,6 +3,7 @@ title: 优秀的命令行工具（三）
 date: 2019-01-17
 tags:
 coverImage: "./images/cmdline-tools-3-cover.png"
+summary: 本文是「优秀的命令行工具」系列的第三篇。在这篇文章中，我将展示五个命令行工具，这些工具能助你更方便地解决常见问题。
 ---
 
 
