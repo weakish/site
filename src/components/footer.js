@@ -13,7 +13,7 @@ const Footer = () => (
           <Link to='/'>首页</Link>
         </li>
         <li>
-          <Link to='mailto:newfrontendweekly0@163.com'>联系我们</Link>
+          <a href='mailto:newfrontendweekly0@163.com'>联系我们</a>
         </li>
       </ul>
     </nav>

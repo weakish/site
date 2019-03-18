@@ -13,7 +13,7 @@ const Header = ({ siteTitle, description }) => (
           <span className={headerStyles.siteName}>{siteTitle}</span>
         </h1>
       </Link>
-      <Link className={headerStyles.submitButton} to="mailto:newfrontendweekly0@163.com">文章投稿</Link>
+      <a className={headerStyles.submitButton} href="mailto:newfrontendweekly0@163.com">文章投稿</a>
     </div>
   </nav>
 )
