@@ -3,38 +3,57 @@ import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import BackgroundImage from 'gatsby-background-image'
 
 import Layout from '../components/layout'
-import indexStyles from './index.module.css';
+import indexStyles from './index.module.css'
 
 const IndexPage = ({ data }) => {
   const articles = data.allMarkdownRemark.edges
   return (
     <Layout>
-      <div className={indexStyles.container}>
-        {articles.map(({ node }) => (
-          <Link
-            to={node.fields.slug}
-            style={{ textDecoration: `none`, color: `inherit` }}
-            key={node.frontmatter.date}
+      <section className={indexStyles.featuredContainer}>
+        {articles.slice(0, 3).map(({ node }) => (
+          <BackgroundImage
+            Tag="div"
+            fluid={node.frontmatter.coverImage.childImageSharp.fluid}
+            key={node.fields.slug}
             className={indexStyles.article}
           >
-          <Img sizes={node.frontmatter.coverImage.childImageSharp.sizes} />
-            <time dateTime={node.frontmatter.date}>
-              {node.frontmatter.date}
-            </time>
-            <h3>{node.frontmatter.title}</h3>
-          </Link>
+            <Link to={node.fields.slug} className={indexStyles.articleLink}>
+              <h3>{node.frontmatter.title}</h3>
+            </Link>
+          </BackgroundImage>
         ))}
-        <section>
+        <section className={indexStyles.subscribeBox}>
           <h2>文章订阅</h2>
           <form>
-          <input type="text" placeholder="输入您的邮箱地址" />
-          <p>我们绝不会分享您的电子邮件地址。您可以随时退订。</p>
-          <input type="submit" value="提交订阅" />
+            <input type="text" placeholder="输入您的邮箱地址" />
+            <p>我们绝不会分享您的电子邮件地址。您可以随时退订。</p>
+            <input type="submit" value="提交订阅" />
           </form>
         </section>
-      </div>
+      </section>
+      <section className={indexStyles.remainingArticles}>
+        {articles.slice(3).map(({ node }) => (
+          <Link
+            key={node.fields.slug}
+            to={node.fields.slug}
+            className={indexStyles.articleLink}
+          >
+            <Img
+              className={indexStyles.articleImage}
+              fluid={node.frontmatter.coverImage.childImageSharp.fluid}
+            />
+            <div className={indexStyles.articleInfo}>
+              <h3>{node.frontmatter.title}</h3>
+              <time dateTime={node.frontmatter.date}>
+                {node.frontmatter.date}
+              </time>
+            </div>
+          </Link>
+        ))}
+      </section>
     </Layout>
   )
 }
@@ -60,8 +79,8 @@ export const query = graphql`
             date(formatString: "YYYY-MM-DD")
             coverImage {
               childImageSharp {
-                sizes(maxWidth: 520) {
-                  ...GatsbyImageSharpSizes
+                fluid(maxWidth: 520) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

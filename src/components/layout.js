@@ -8,6 +8,7 @@ import Footer from './footer';
 
 import 'prismjs/themes/prism-coy.css';
 import './layout.css';
+import layoutStyles from './layout.module.css';
 
 // TODO: move all site metadata to query source.
 const Layout = ({ children }) => (
@@ -37,14 +38,7 @@ const Layout = ({ children }) => (
         />
         <Header siteTitle={data.site.siteMetadata.title}
           description={data.site.siteMetadata.description} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 720,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0
-          }}
-        >
+        <div className={layoutStyles.pageBody}>
           {children}
         </div>
         <Footer />

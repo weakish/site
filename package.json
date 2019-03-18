@@ -5,6 +5,7 @@
   "author": "Hong Jiang <hjiang@leancloud.rocks>",
   "dependencies": {
     "gatsby": "^2.1.37",
+    "gatsby-background-image": "^0.2.72",
     "gatsby-image": "^2.0.34",
     "gatsby-link": "^2.0.16",
     "gatsby-plugin-feed": "^2.0.15",
