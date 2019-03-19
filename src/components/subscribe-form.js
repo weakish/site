@@ -11,15 +11,13 @@ const SubscribeForm = () => (
     target="_blank"
   >
     <h2>文章订阅</h2>
-    <div className="mc-field-group">
-      <input
-        type="email"
-        name="EMAIL"
-        className="required email"
-        id="mce-EMAIL"
-        placeholder="您的邮箱地址"
-      />
-    </div>
+    <input
+      type="email"
+      name="EMAIL"
+      className="required email"
+      id="mce-EMAIL"
+      placeholder="您的邮箱地址"
+    />
     <p>我们绝不会分享您的电子邮件地址。您可以随时退订。</p>
     <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
       <input

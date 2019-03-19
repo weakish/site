@@ -20,6 +20,8 @@
   display: block;
   width: 100%;
   height: 100%;
+  color: white;
+  position: relative;
 }
 
 .featuredContainer .article:nth-child(1) {
@@ -32,11 +34,6 @@
 
 .featuredContainer .article:nth-child(3) {
   grid-area: third;
-}
-
-.featuredContainer .articleLink {
-  color: white;
-  position: relative;
 }
 
 .featuredContainer h3 {
@@ -92,7 +89,7 @@
 .remainingArticles .articleLink {
   display: flex;
   margin: 2rem 0;
-  width: 78.4rem;
+  max-width: 78.4rem;
 }
 
 .remainingArticles .articleImage {
@@ -111,4 +108,36 @@
 
 .articleLink:hover {
   text-decoration: none;
+}
+
+@media (min-width: 784px) and (max-width: 1042px) {
+  .featuredContainer {
+    grid-template-areas:
+      'first second'
+      'first third'
+      'subscribe subscribe';
+    grid-template-columns: 52rem 25.4rem;
+    grid-template-rows: 14.2rem 14.2rem, auto;
+  }
+}
+
+@media (max-width: 783px) {
+  .featuredContainer {
+    grid-template-areas:
+      'first' 'second' 'third' 'subscribe';
+    grid-template-columns: auto;
+    grid-template-rows: 20rem 20rem 20rem auto;
+  }
+
+  .featuredContainer .article:nth-child(1) h3 {
+    font-size: 1.6rem;
+  }
+
+  .remainingArticles .articleImage {
+    display: none;
+  }
+
+  .remainingArticles .articleInfo h3 {
+    font-size: 1.6rem;
+  }
 }

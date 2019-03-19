@@ -36,3 +36,39 @@
   bottom: 2rem;
   width: 20.6rem;
 }
+
+@media (max-width: 1042px) {
+  .VerticalSubscribeForm {
+    padding: 3rem;
+  }
+  .VerticalSubscribeForm p {
+    display: none;
+  }
+
+  .VerticalSubscribeForm input[type="email"] {
+    max-width: 50rem;
+    display: inline-block;
+    height: 3.6rem;
+  }
+  .VerticalSubscribeForm input[type="submit"] {
+    max-width: 21rem;
+    margin-left: 1rem;
+    display: inline-block;
+    position: static;
+  }
+}
+
+@media (max-width: 783px) {
+  .VerticalSubscribeForm input[type="email"] {
+    width: 100%;
+    display: block;
+    height: 3.6rem;
+  }
+  .VerticalSubscribeForm input[type="submit"] {
+    max-width: 21rem;
+    margin-left: 0;
+    margin-top: 1rem;
+    display: block;
+    position: static;
+  }
+}
