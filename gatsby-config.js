@@ -2,11 +2,19 @@ module.exports = {
   siteMetadata: {
     title: 'New Frontend',
     description: '收集整理知识、见识、见闻，陪伴程序员前进',
-    siteUrl: 'https://nextfe.com'
+    keywords: '程序设计, 软件工程, 软件开发工具, 程序设计语言',
+    siteUrl: 'https://nextfe.com',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-glamor',
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'zh',
+        prefix: 'og: http://ogp.me/ns#',
+      },
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -29,9 +37,9 @@ module.exports = {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug
-                });
-              });
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                })
+              })
             },
             query: `
               {
@@ -56,23 +64,23 @@ module.exports = {
                 }
               }
             `,
-            output: '/rss.xml'
-          }
-        ]
-      }
+            output: '/rss.xml',
+          },
+        ],
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'contents',
-        path: `${__dirname}/contents/`
-      }
+        path: `${__dirname}/contents/`,
+      },
     },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography.js`
-      }
+        pathToConfigModule: `src/utils/typography.js`,
+      },
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -89,18 +97,18 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 784,
-              showCaptions: true
-            }
-          }
-        ]
-      }
+              showCaptions: true,
+            },
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-28361803-1'
-      }
+        trackingId: 'UA-28361803-1',
+      },
     },
     `gatsby-plugin-netlify`, // make sure to put last in the array
-  ]
-};
+  ],
+}

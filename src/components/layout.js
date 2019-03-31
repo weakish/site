@@ -32,7 +32,7 @@ const Layout = ({ children }) => (
               content: data.site.siteMetadata.description
             },
             {
-              name: 'keywords', content: 'programming, startup, software, internet'
+              name: 'keywords', content: data.site.siteMetadata.keywords
             }
           ]}
         />

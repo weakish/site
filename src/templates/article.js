@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import MailchimpSubscribe from 'react-mailchimp-subscribe'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SubscribeForm from '../components/subscribe-form'
+import BackgroundImage from 'gatsby-background-image'
 
 import articleStyles from './article.module.css'
 
@@ -15,11 +15,34 @@ const Article = ({ data }) => {
     <Layout>
       <div className={articleStyles.articleContainer}>
         <article>
-          <Helmet title={article.frontmatter.title} />
-          <h1>{article.frontmatter.title}</h1>
-          <time dateTime={article.frontmatter.date}>
-            {article.frontmatter.date}
-          </time>
+          <Helmet title={article.frontmatter.title} 
+          meta={[
+            {
+              name: 'og:title',
+              content: article.frontmatter.title
+            },
+            {
+              name: 'og:description',
+              content: article.frontmatter.summary
+            },
+            {
+              name: 'og:image',
+              content: article.frontmatter.coverImage.childImageSharp.fluid
+            }
+          ]} />
+          <BackgroundImage
+            Tag="div"
+            fluid={article.frontmatter.coverImage.childImageSharp.fluid}
+            key={article.fields.slug}
+            className={articleStyles.heroImage}
+          >
+            <div className={articleStyles.heroForeground}>
+              <h1>{article.frontmatter.title}</h1>
+              <time dateTime={article.frontmatter.date}>
+                {article.frontmatter.date}
+              </time>
+            </div>
+          </BackgroundImage>
           <div
             className={articleStyles.articleBody}
             dangerouslySetInnerHTML={{ __html: article.html }}
@@ -46,6 +69,14 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "YYYY-MM-DD")
+        summary
+        coverImage {
+          childImageSharp {
+            fluid(maxWidth: 784) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
       fields {
         slug
