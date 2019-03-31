@@ -106,7 +106,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-28361803-1',
+        trackingId: 'UA-42629236-13',
+        cookieDomain: "nextfe.com",
       },
     },
     `gatsby-plugin-netlify`, // make sure to put last in the array
