@@ -70,6 +70,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `New Frontend`,
+        short_name: `New Frontend`,
+        start_url: `/`,
+        icon: `src/components/assets/icon.svg`, // This path is relative to the root of the site.
+        include_favicon: true, // Include favicon
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'contents',

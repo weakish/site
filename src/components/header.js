@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
 import headerStyles from './header.module.css'
-import logoImage from './assets/logo@2x.png'
+import logoImage from './assets/icon.svg'
 
 const Header = ({ siteTitle, description }) => (
   <nav className={headerStyles.topNav}>
