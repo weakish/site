@@ -18,6 +18,10 @@ const Article = ({ data }) => {
           <Helmet title={article.frontmatter.title} 
           meta={[
             {
+              name: 'twitter:card',
+              content: 'summary_large_image'
+            },
+            {
               name: 'og:title',
               content: article.frontmatter.title
             },
