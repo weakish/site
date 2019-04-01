@@ -15,25 +15,29 @@ const Article = ({ data }) => {
     <Layout>
       <div className={articleStyles.articleContainer}>
         <article>
-          <Helmet title={article.frontmatter.title} 
-          meta={[
-            {
-              name: 'twitter:card',
-              content: 'summary_large_image'
-            },
-            {
-              name: 'og:title',
-              content: article.frontmatter.title
-            },
-            {
-              name: 'og:description',
-              content: article.frontmatter.summary
-            },
-            {
-              name: 'og:image',
-              content: article.frontmatter.coverImage.childImageSharp.fluid.src
-            }
-          ]} />
+          <Helmet
+            title={article.frontmatter.title}
+            meta={[
+              {
+                name: 'twitter:card',
+                content: 'summary_large_image',
+              },
+              {
+                name: 'og:title',
+                content: article.frontmatter.title,
+              },
+              {
+                name: 'og:description',
+                content: article.frontmatter.summary,
+              },
+              {
+                name: 'og:image',
+                content:
+                  data.site.siteMetadata.siteUrl +
+                  article.frontmatter.coverImage.childImageSharp.fluid.src,
+              },
+            ]}
+          />
           <BackgroundImage
             Tag="div"
             fluid={article.frontmatter.coverImage.childImageSharp.fluid}
@@ -84,6 +88,11 @@ export const query = graphql`
       }
       fields {
         slug
+      }
+    }
+    site {
+      siteMetadata {
+        siteUrl
       }
     }
   }
