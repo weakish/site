@@ -27,7 +27,7 @@ const Article = ({ data }) => {
             },
             {
               name: 'og:image',
-              content: article.frontmatter.coverImage.childImageSharp.fluid
+              content: article.frontmatter.coverImage.childImageSharp.fluid.src
             }
           ]} />
           <BackgroundImage
