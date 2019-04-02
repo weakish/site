@@ -12,6 +12,9 @@ const Footer = () => (
         <li>
           <a href="mailto:newfrontendweekly0@163.com">联系我们</a>
         </li>
+        <li>
+          <a href="/rss.xml">RSS</a>
+        </li>
       </ul>
     </nav>
     <p>
