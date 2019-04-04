@@ -82,6 +82,7 @@
 }
 
 .comments {
+  margin-top: 2rem;
   font-size: 1.4rem;
   max-width: var(--article-max-width);
 }
