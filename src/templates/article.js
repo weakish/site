@@ -36,6 +36,20 @@ const Article = ({ data }) => {
                   article.frontmatter.coverImage.childImageSharp.fluid.src
               }
             ]}
+            link={[
+              {
+                rel: 'stylesheet',
+                href: 'https://assets.remarkninjia.com/remark-ninjia.css'
+              }
+            ]}
+            script={[
+              {
+                // async: 1,
+                // defer: 1,
+                src: "https://assets.remarkninjia.com/remark-ninjia.js",
+                type: "text/javascript"
+              }
+            ]}
           />
           <BackgroundImage
             Tag="div"
@@ -59,6 +73,7 @@ const Article = ({ data }) => {
           <SubscribeForm />
         </div>
       </div>
+      <div id="remark-ninjia-container" data-user-site-id="testsite"></div>
     </Layout>
   );
 };
