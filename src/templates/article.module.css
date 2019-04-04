@@ -60,6 +60,10 @@
   line-height: 1.6;
 }
 
+.articleBody li {
+  margin-left: 1.5rem;
+}
+
 .subscribeBox {
   grid-area: side;
   height: 29.4rem;
@@ -110,5 +114,10 @@
   .subscribeBox {
     height: auto;
     position: static;
+  }
+
+  .comments {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
