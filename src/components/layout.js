@@ -22,28 +22,28 @@ const Layout = ({ children }) => (
       }
     }
   `}
-    render={data => (
-      <div>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            {
-              name: 'description',
-              content: data.site.siteMetadata.description
-            },
-            {
-              name: 'keywords', content: data.site.siteMetadata.keywords
-            }
-          ]}
-        />
-        <Header siteTitle={data.site.siteMetadata.title}
-          description={data.site.siteMetadata.description} />
-        <div className={layoutStyles.pageBody}>
-          {children}
-        </div>
-        <Footer />
+  render={data => (
+    <div>
+      <Helmet
+        title={data.site.siteMetadata.title}
+        meta={[
+          {
+            name: 'description',
+            content: data.site.siteMetadata.description
+          },
+          {
+            name: 'keywords', content: data.site.siteMetadata.keywords
+          }
+        ]}
+      />
+      <Header siteTitle={data.site.siteMetadata.title}
+        description={data.site.siteMetadata.description} />
+      <div className={layoutStyles.pageBody}>
+        {children}
       </div>
-    )}
+      <Footer />
+    </div>
+  )}
   />
 );
 

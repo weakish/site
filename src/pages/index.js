@@ -1,16 +1,15 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import BackgroundImage from 'gatsby-background-image'
+import React from 'react';
+import Link from 'gatsby-link';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import BackgroundImage from 'gatsby-background-image';
 
-import Layout from '../components/layout'
-import SubscribeForm from '../components/subscribe-form'
-import indexStyles from './index.module.css'
+import Layout from '../components/layout';
+import SubscribeForm from '../components/subscribe-form';
+import indexStyles from './index.module.css';
 
 const IndexPage = ({ data }) => {
-  const articles = data.allMarkdownRemark.edges
+  const articles = data.allMarkdownRemark.edges;
   return (
     <Layout>
       <section className={indexStyles.featuredContainer}>
@@ -54,14 +53,14 @@ const IndexPage = ({ data }) => {
         ))}
       </section>
     </Layout>
-  )
-}
+  );
+};
 
 IndexPage.propTypes = {
-  data: PropTypes.object,
-}
+  data: PropTypes.object
+};
 
-export default IndexPage
+export default IndexPage;
 
 export const query = graphql`
   query IndexQuery {
@@ -93,4 +92,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

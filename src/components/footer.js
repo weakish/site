@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import footerStyles from './footer.module.css'
+import React from 'react';
+import Link from 'gatsby-link';
+import footerStyles from './footer.module.css';
 
 const Footer = () => (
   <div className={footerStyles.footer}>
@@ -22,6 +22,6 @@ const Footer = () => (
     </p>
     <p>&copy; nextfe.com 2018 - 2019. All rights reserved.</p>
   </div>
-)
+);
 
-export default Footer
+export default Footer;

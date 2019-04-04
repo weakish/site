@@ -1,16 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-import SubscribeForm from '../components/subscribe-form'
-import BackgroundImage from 'gatsby-background-image'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
+import Layout from '../components/layout';
+import SubscribeForm from '../components/subscribe-form';
+import BackgroundImage from 'gatsby-background-image';
 
-import articleStyles from './article.module.css'
+import articleStyles from './article.module.css';
 
 const Article = ({ data }) => {
-  const article = data.markdownRemark
-  const contentId = article.fields.slug.split('/').join('')
+  const article = data.markdownRemark;
   return (
     <Layout>
       <div className={articleStyles.articleContainer}>
@@ -20,22 +19,22 @@ const Article = ({ data }) => {
             meta={[
               {
                 name: 'twitter:card',
-                content: 'summary_large_image',
+                content: 'summary_large_image'
               },
               {
                 name: 'og:title',
-                content: article.frontmatter.title,
+                content: article.frontmatter.title
               },
               {
                 name: 'og:description',
-                content: article.frontmatter.summary,
+                content: article.frontmatter.summary
               },
               {
                 name: 'og:image',
                 content:
                   data.site.siteMetadata.siteUrl +
-                  article.frontmatter.coverImage.childImageSharp.fluid.src,
-              },
+                  article.frontmatter.coverImage.childImageSharp.fluid.src
+              }
             ]}
           />
           <BackgroundImage
@@ -61,14 +60,14 @@ const Article = ({ data }) => {
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
 Article.propTypes = {
-  data: PropTypes.object,
-}
+  data: PropTypes.object
+};
 
-export default Article
+export default Article;
 
 export const query = graphql`
   query ArticleQuery($slug: String!) {
@@ -96,4 +95,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

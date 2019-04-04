@@ -1,8 +1,8 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import PropTypes from 'prop-types'
-import headerStyles from './header.module.css'
-import logoImage from './assets/icon.svg'
+import React from 'react';
+import Link from 'gatsby-link';
+import PropTypes from 'prop-types';
+import headerStyles from './header.module.css';
+import logoImage from './assets/icon.svg';
 
 const Header = ({ siteTitle, description }) => (
   <nav className={headerStyles.topNav}>
@@ -16,11 +16,11 @@ const Header = ({ siteTitle, description }) => (
       <a className={headerStyles.submitButton} href="mailto:newfrontendweekly0@163.com">文章投稿</a>
     </div>
   </nav>
-)
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-  description: PropTypes.string,
-}
+  description: PropTypes.string
+};
 
-export default Header
+export default Header;

@@ -7,14 +7,14 @@ moragaTheme.headerFontFamily = moragaTheme.bodyFontFamily;
 
 moragaTheme.overrideThemeStyles = () => ({
   '.js-system--apple': {
-    fontFeatureSettings: "case, ss01, ss02"
+    fontFeatureSettings: 'case, ss01, ss02'
   },
   '[lang=zh],[lang=ja]': {
     textAlign: 'start',
     header: {
       textAlign: 'start'
     }
-  },
+  }
 });
 
 const typography = new Typography(moragaTheme);

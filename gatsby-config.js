@@ -3,7 +3,7 @@ module.exports = {
     title: 'New Frontend',
     description: '收集整理知识、见识、见闻，陪伴程序员前进',
     keywords: '程序设计, 软件工程, 软件开发工具, 程序设计语言',
-    siteUrl: 'https://nextfe.com',
+    siteUrl: 'https://nextfe.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -12,8 +12,8 @@ module.exports = {
       resolve: 'gatsby-plugin-html-attributes',
       options: {
         lang: 'zh',
-        prefix: 'og: http://ogp.me/ns#',
-      },
+        prefix: 'og: http://ogp.me/ns#'
+      }
     },
     {
       resolve: `gatsby-plugin-feed`,
@@ -37,9 +37,9 @@ module.exports = {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                })
-              })
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug
+                });
+              });
             },
             query: `
               {
@@ -64,10 +64,10 @@ module.exports = {
                 }
               }
             `,
-            output: '/rss.xml',
-          },
-        ],
-      },
+            output: '/rss.xml'
+          }
+        ]
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -76,21 +76,21 @@ module.exports = {
         short_name: `New Frontend`,
         start_url: `/`,
         icon: `src/components/assets/icon.svg`, // This path is relative to the root of the site.
-        include_favicon: true, // Include favicon
-      },
+        include_favicon: true // Include favicon
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'contents',
-        path: `${__dirname}/contents/`,
-      },
+        path: `${__dirname}/contents/`
+      }
     },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography.js`,
-      },
+        pathToConfigModule: `src/utils/typography.js`
+      }
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -107,19 +107,19 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 784,
-              showCaptions: true,
-            },
-          },
-        ],
-      },
+              showCaptions: true
+            }
+          }
+        ]
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-42629236-13',
-        cookieDomain: "nextfe.com",
-      },
+        cookieDomain: 'nextfe.com'
+      }
     },
-    `gatsby-plugin-netlify`, // make sure to put last in the array
-  ],
-}
+    `gatsby-plugin-netlify` // make sure to put last in the array
+  ]
+};

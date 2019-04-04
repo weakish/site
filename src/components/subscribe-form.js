@@ -1,5 +1,5 @@
-import React from 'react'
-import SubscribeFormStyles from './subscribe-form.module.css'
+import React from 'react';
+import SubscribeFormStyles from './subscribe-form.module.css';
 
 const SubscribeForm = () => (
   <form
@@ -34,6 +34,6 @@ const SubscribeForm = () => (
       className="button"
     />
   </form>
-)
+);
 
-export default SubscribeForm
+export default SubscribeForm;
