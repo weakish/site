@@ -81,6 +81,11 @@
   opacity: 0.8;
 }
 
+.comments {
+  font-size: 1.4rem;
+  max-width: var(--article-max-width);
+}
+
 @media (max-width: 1042px) {
   .articleContainer {
     display: block;

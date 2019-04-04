@@ -1,3 +1,5 @@
+// -*- mode: rjsx-mode; ... -*-
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
@@ -32,7 +34,7 @@ const Article = ({ data }) => {
               {
                 name: 'og:image',
                 content:
-                  data.site.siteMetadata.siteUrl +
+                data.site.siteMetadata.siteUrl +
                   article.frontmatter.coverImage.childImageSharp.fluid.src
               }
             ]}
@@ -44,8 +46,8 @@ const Article = ({ data }) => {
             ]}
             script={[
               {
-                // async: 1,
-                // defer: 1,
+                async: 1,
+                defer: 1,
                 src: "https://assets.remarkninjia.com/remark-ninjia.js",
                 type: "text/javascript"
               }
@@ -72,8 +74,11 @@ const Article = ({ data }) => {
         <div className={articleStyles.subscribeBox}>
           <SubscribeForm />
         </div>
+        <div className={articleStyles.comments}>
+          <h2>评论</h2>
+          <div id="remark-ninjia-container"></div>
+        </div>
       </div>
-      <div id="remark-ninjia-container" data-user-site-id="testsite"></div>
     </Layout>
   );
 };
