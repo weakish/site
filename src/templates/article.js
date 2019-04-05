@@ -46,7 +46,6 @@ const Article = ({ data }) => {
             ]}
             script={[
               {
-                async: 1,
                 defer: 1,
                 src: "https://assets.remarkninjia.com/remark-ninjia.js",
                 type: "text/javascript"
