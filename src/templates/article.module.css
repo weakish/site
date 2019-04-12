@@ -64,6 +64,11 @@
   margin-left: 1.5rem;
 }
 
+.articleBody :not(pre) > code[class*="language-"] {
+  color: #696969;
+  border: 0;
+}
+
 .subscribeBox {
   grid-area: side;
   height: 29.4rem;
