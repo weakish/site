@@ -6,7 +6,7 @@ coverImage: "./images/vsc-plugins-cover.png"
 summary: 前端为主的开发者，想高效使用 Visual Studio Code，我觉得这个列表会很有帮助。
 ---
 
-[Alexander Romano] 原作，授权 LeanCloud 翻译。
+[Alexander Romano] 原作，授权 [LeanCloud](https://leancloud.cn/) 翻译。
 
 [Alexander Romano]: https://dev.to/vip3rousmango/vs-code-extensions-youll-actually-use-46gp
 

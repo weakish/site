@@ -3,10 +3,10 @@ title: 19 年 3 月 GitHub 上最流行的 34 个 JS 仓库
 date: 2019-03-20
 tags:
 coverImage: "./images/js-digest-e1552477771477.png"
-summary: GitHub 上值得留意的开源 JavaScript 项目
+summary: 模块化的 JavaScript 文件上传器，音频库，VSCode 的 Git 历史插件，JS 加速库，队列包，可缩放的分屏组件，以及 GitHub 上其他许多炫酷的开源仓库。
 ---
 
-[Iren Korkishko] 原作，授权 LeanCloud 翻译。
+[Iren Korkishko] 原作，授权 [LeanCloud](https://leancloud.cn/) 翻译。
 
 [Iren Korkishko]: https://syndicode.com/2019/03/13/monthly-most-popular-js-repositories-shy-sunshine/
 

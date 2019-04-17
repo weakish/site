@@ -7,7 +7,7 @@ summary: 本文是「优秀的命令行工具」系列的第三篇。在这篇�
 ---
 
 
-[Darren Burns] 原作， 授权 LeanCloud 翻译。
+[Darren Burns] 原作， 授权 [LeanCloud](https://leancloud.cn/) 翻译。
 
 [Darren Burns]: https://darrenburns.net/posts/more-tools/
 

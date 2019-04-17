@@ -1,12 +1,12 @@
 ---
-title: 2019 前端框架对比
+title: 2019 前端框架对比及评测
 date: 2019-04-16
 tags:
 coverImage: "./images/realworld-comparison.png"
-summary: 基于 RealWorld 示例应用评测对比前端框架
+summary: 基于 RealWorld 示例应用评测 React、Vue、Angular、Elm、Svelte、Dojo 2 等 18 个前端框架的性能、尺寸、代码行数。
 ---
 
-[Jacek Schae] 原作，授权 LeanCloud 翻译。
+[Jacek Schae] 原作，授权 [LeanCloud](https://leancloud.cn/) 翻译。
 
 [Jacek Schae]: https://medium.freecodecamp.org/a-realworld-comparison-of-front-end-frameworks-with-benchmarks-2019-update-4be0d3c78075
 
@@ -99,21 +99,21 @@ summary: 基于 RealWorld 示例应用评测对比前端框架
 
 ### 结论
 
-这方面有不少轰动的结果。Svelte，魔法消失 UI 框架，无愧其名。Stencil 是一个比较新的框架，表现优异。这两个框架相对而言都比较新，将尺寸推向了新的极限。
+这方面有不少惊人的结果。Svelte，魔法消失 UI 框架，无愧其名。Stencil 是一个比较新的框架，表现优异。这两个框架相对而言都比较新，将尺寸推向了新的极限。
 
 ## 代码行数
 
-我们使用 [cloc] 计算每个仓库的 src 目录的代码行数。**不计**空行和注释。为什么要比较代码行数？这是因为：
+我们使用 [cloc] 计算每个仓库的 src 目录的代码行数，不计空行和注释。为什么要比较代码行数？这是因为：
 
 [cloc]: https://github.com/AlDanial/cloc
 
 > 如果说调试是移除软件 bug 的过程，那么编程一定是植入 bug 的过程。
-
-Edsger Dijkstra
+>
+> Edsger Dijkstra
 
 ### TL;DR
 
-下面的图表显示了给定的库/框架/语言有多凝练。根据规范实现几乎完全一样的应用（某些应用功能略多一点）需要多少行代码？
+下面的图表显示了给定的库/框架/语言有多凝练。根据规范实现几乎完全一样的应用（某些应用功能略多一点）需要多少行代码。
 
 ![代码行数](images/realworld-lines-of-code.png)
 
@@ -130,7 +130,7 @@ Edsger Dijkstra
 
 别忘了这并不是一个精确公平的对比。有些实现分离了代码，有些没有。有些部署在 GitHub 上，有些部署在 Now 上，有些部署在 Netlify 上。如果你仍然要问哪个最好？我只能说，最好的框架是最符合你需求的那个。
 
-**Q:** 偏爱类型？<br>
+**Q:** 偏爱强类型检查？<br>
 **A:** 了解下 Elm、PureScript、TypeScript —— Angular、AppRun、Dojo.
 
 **Q:** 想要一个非常轻量的框架？<br>

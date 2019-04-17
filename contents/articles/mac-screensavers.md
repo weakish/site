@@ -3,10 +3,10 @@ title: 七款酷炫的 Mac 屏保
 date: 2019-02-26
 tags:
 coverImage: "./images/mac-screensavers-cover.png"
-summary: 你的桌面屏保是什么？
+summary: Ankur Biswas 分享了他最喜欢的一些 MacBook 屏保，让电脑看起来美美哒～ 那么，你用的桌面屏保又是哪一款呢？
 ---
 
-[Ankur Biswas] 原作，授权 LeanCloud 翻译。
+[Ankur Biswas] 原作，授权 [LeanCloud](https://leancloud.cn/) 翻译。
 
 [Ankur Biswas]: https://dev.to/teamxenox/list-of-awesome-macbook-screensavers-3313
 
