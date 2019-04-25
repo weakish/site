@@ -5,12 +5,6 @@
   border-bottom: 1px solid var(--background-grey-dark);
 }
 
-.topNav img {
-  margin: 0;
-  vertical-align: middle;
-  height: 6rem;
-}
-
 .topNav > div {
   max-width: var(--page-max-width);
   margin: auto;
@@ -21,7 +15,6 @@
 }
 
 .topNav h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 0;
   vertical-align: middle;
 }
@@ -32,6 +25,8 @@
 
 .siteName {
   margin-left: 1rem;
+  font-size: 4rem;
+  font-weight: 100;
   color: var(--text-color1);
 }
 
