@@ -12,38 +12,41 @@ import layoutStyles from './layout.module.css';
 
 // TODO: move all site metadata to query source.
 const Layout = ({ children }) => (
-  <StaticQuery query={graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-          description
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+            description
+          }
         }
       }
-    }
-  `}
-  render={data => (
-    <div>
-      <Helmet
-        title={data.site.siteMetadata.title}
-        meta={[
-          {
-            name: 'description',
-            content: data.site.siteMetadata.description
-          },
-          {
-            name: 'keywords', content: data.site.siteMetadata.keywords
-          }
-        ]}
-      />
-      <Header siteTitle={data.site.siteMetadata.title}
-        description={data.site.siteMetadata.description} />
-      <div className={layoutStyles.pageBody}>
-        {children}
+    `}
+    render={data => (
+      <div>
+        <Helmet
+          title={data.site.siteMetadata.title}
+          meta={[
+            {
+              name: 'description',
+              content: data.site.siteMetadata.description
+            },
+            {
+              name: 'keywords',
+              content: data.site.siteMetadata.keywords
+            }
+          ]}
+        />
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          description={data.site.siteMetadata.description}
+        />
+        <div className={layoutStyles.pageBody}>{children}</div>
+        <Footer />
+        <script src="//cdn.freshmarketer.com/424183/1134989.js" />
       </div>
-      <Footer />
-    </div>
-  )}
+    )}
   />
 );
 
