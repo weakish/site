@@ -44,7 +44,6 @@ const Layout = ({ children }) => (
         />
         <div className={layoutStyles.pageBody}>{children}</div>
         <Footer />
-        <script src="//cdn.freshmarketer.com/424183/1134989.js" />
       </div>
     )}
   />
