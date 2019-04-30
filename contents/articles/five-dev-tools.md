@@ -6,7 +6,7 @@ coverImage: "./images/ak018s7aqm3s49g3xqs8.png"
 summary: 将普通开发人员与优秀开发人员区分开来的一个原因是不断渴望学习和采用可以简化生活的新工具。这里列出了五个很酷的工具。
 ---
 
-[Tomek Poniatowicz] 原作，授权 [LeanCloud](https://leancloud.cn/) 翻译。
+[Tomek Poniatowicz] 原作，授权 [New Frontend](https://nextfe.com/) 翻译。
 
 [Tomek Poniatowicz]: https://dev.to/tomekponiat/5-developer-tools-you-need-to-check-out-34k0
 
