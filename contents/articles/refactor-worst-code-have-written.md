@@ -2,8 +2,8 @@
 title: 重构我写过的最糟糕的代码
 date: 2019-05-17
 tags:
-coverImage: "./images/3oa4wwsi6a5xwsvw8qu2.webp"
-summary: TODO
+coverImage: "./images/3oa4wwsi6a5xwsvw8qu2.png"
+summary: 我们中的大多数人都写过让自己羞愧的糟糕代码。但是当我们回顾过去的代码时，如果能意识到我们可以如何写得更好，乃至觉得当初做的选择很可笑，那么这是一个成长的标志。
 ---
 
 [Jacque Schrag] 原作，授权 [New Frontend](https://nextfe.com/) 翻译。
