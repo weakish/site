@@ -120,6 +120,14 @@ module.exports = {
         cookieDomain: 'nextfe.com'
       }
     },
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '1',
+        matomoUrl: 'https://t.leancloud.tk',
+        siteUrl: 'https://nextfe.com'
+      }
+    },
     `gatsby-plugin-netlify` // make sure to put last in the array
   ]
 };
