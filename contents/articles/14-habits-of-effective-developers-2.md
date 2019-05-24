@@ -3,7 +3,7 @@ title: 高效程序员的 14 个习惯（二）
 date: 2019-05-24
 tags:
 coverImage: "./images/zan-ilic-1607679-unsplash.jpg"
-summary: 能从根本上改变一个人的思维习惯并让其从初级程序员转为中级程序员甚至是高级程序员的东西，是「习惯」。
+summary: 不同的人有不同的习惯，但养成好的习惯应该是每个人共同的追求。
 ---
 
 [Paul Isaris] 原作，授权 [New Frontend](https://nextfe.com/) 翻译。
