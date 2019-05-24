@@ -8,9 +8,7 @@ summary: 不同的人有不同的习惯，但养成好的习惯应该是每个�
 
 [Paul Isaris] 原作，授权 [New Frontend](https://nextfe.com/) 翻译。
 
-[Paul Isaris]: https://dev.to/pavlosisaris/the-14-habits-of-highly-effective-developers-part-2-2io0
-
-本文最初发表于 [paulisaris.com](https://paulisaris.com/the-14-habits-of-highly-effective-developers-part-2/)。
+[Paul Isaris]: https://paulisaris.com/the-14-habits-of-highly-effective-developers-part-2/
 
 ## 序言
 
@@ -103,7 +101,5 @@ summary: 不同的人有不同的习惯，但养成好的习惯应该是每个�
 养成良好的个人与职业上的习惯可以帮助一个人快速成为领域的专家。职业发展并不是一夜间就能完成的事，它需要的是时间，更是持之以恒的态度。你现在要做的就是尽可能多地在生活中实践上面这些习惯，早晚有一天你会成为真正的专家的！
 
 如果你对这些习惯有任何想法，欢迎在下面留言！:-)
-
-这篇文章同时发表在我的[个人博客](https://paulisaris.com/the-14-habits-of-highly-effective-developers-part-2/)。
 
 Photo by Zan Ilic on Unsplash

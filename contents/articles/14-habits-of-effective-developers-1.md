@@ -8,7 +8,7 @@ summary: 能从根本上改变一个人的思维习惯并让其从初级程序�
 
 [Paul Isaris] 原作，授权 [New Frontend](https://nextfe.com/) 翻译。
 
-[Paul Isaris]: https://dev.to/pavlosisaris/how-to-transition-from-junior-to-mid-level-developer-part-1-4gig
+[Paul Isaris]: https://paulisaris.com/the-14-habits-of-highly-effective-developers-part-1/
 
 ## 序言
 
@@ -83,7 +83,5 @@ summary: 能从根本上改变一个人的思维习惯并让其从初级程序�
 从初级程序员跃升到中级程序员并不是一夜之间就能完成的事，你需要养成好的习惯才能在工作上有所提升并变得更加专业。在这篇文章中，我列出了一个程序员想要作出这样的改变并产生影响力所需要的最重要的习惯。
 
 如果你有任何想法，可以在下面留言。敬请期待第二篇！:-)
-
-这篇文章同时发表在我的[个人博客](https://paulisaris.com/the-14-habits-of-highly-effective-developers-part-1/)。
 
 Photo by Tirza van Dijk on Unsplash
