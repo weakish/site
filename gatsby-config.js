@@ -107,7 +107,9 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 784,
-              showCaptions: true
+              // gatsby-remark-images 3.0.11 will show alt as caption if no caption is provided,
+              // so we set showCaptions to false
+              showCaptions: false
             }
           }
         ]
