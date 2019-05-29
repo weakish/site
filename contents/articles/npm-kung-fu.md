@@ -1,5 +1,5 @@
 ---
-title: 实用 npm 小窍门
+title: 你可能不知道的 npm 实用技巧 
 date: 2019-05-29
 tags:
 coverImage: "./images/ruben-bagues-102896-unsplash.jpg"
@@ -46,9 +46,11 @@ webpack ...
 推荐：
 
 ```sh
-npm install --save-dev webpack
+npm i -D webpack
 npx webpack ...
 ```
+
+这里 `i -D` 是 `install --save-dev` 的简写形式。
 
 对于一些一次性的临时任务，可以直接通过 npx 运行相应工具，免去了手动安装的麻烦，也不会污染 `devDependencies`。
 
@@ -109,7 +111,7 @@ available via `npm run-script`:
 - `npm init -y` 默认情况下，`npm init` 会让你回答一些问题。`npm init -y` 可以跳过这些问题，直接上手开发。我之所以不推荐它，是因为，如果你打算尽快上手开发一个应用，绝大多数情况下会用框架，而几乎所有框架在 npmjs 上都至少有一个 `create-xxx-app` 包。所以基本上你没有机会输入 `npm init` 去回答那些问题。而如果你打算写一个组件或库，那么 `package.json` 中的元信息对组件或库的使用者很重要（即使是仅供你自己使用的组件或库，未来的你也未必记得当初写这个组件或库的上下文），跳过这些问题并不是一个好主意。当然，急躁是程序员的三大美德，你也许会想，我可以在完成开发后再来补这些。但是，一般来说，往往项目开始的时候是你最有兴趣（或者说，稍微不那么反感）记录这些上下文的时刻。如果在项目开始的时候都不耐烦做这个，开发完成后，很可能就更没兴趣了。同理，README 也应该在项目开始前写。
 - `npm repo` 可以打开项目的源代码仓库（大部分情况下是 GitHub），它还有一个姊妹命令，`npm home`，可以打开项目的主页。不过，我个人觉得，比起这两个命令，通常而言， IDE 或者编辑器的智能提示（速览类型、速览文档、速览定义之类）更高效。
 - `.npmignore` 文件可以列出不想打包的文件，避免把一些无关的文件发布到 npmjs 上。但是，统一使用 `.gitignore` 可以满足绝大部分场景下的需求。而且，只存在 `.gitignore` 的情况下，`npm publish` 会尊重 `.gitignore` 的声明，而 `.npmignore` 和 `.gitignore` 同时存在的情况下，`npm publish` 会忽略 `.gitignore`，而不是取两者的并集。换言之，`.gitignore` 中忽略但 `.npmignore` 中未忽略的文件会被打包发布。所以，使用 `.npmginore` 就意味着需要同时小心翼翼地维护两份大部分内容重复的列表。同时，一旦团队中有任何一人因为偶然的疏忽或者不熟悉 `.npmignore` 和 `.gitignore` 关系的细节出现了失误，那就有可能将敏感信息发布到 npmjs 上，导致安全事故。
-- 各种 npm 命令的快捷版本，比如用 `npm i -D` 代替 `npm install --save-dev`。这些个人觉得不用专门刻意去记。经常输入的命令，可以 `npm help` 一下看看有没有简短版本。不查也没有关系，`npm t` 和 `npm test` 乃至 `npm run test` 的区别绝不是开发效率的瓶颈所在。很多时候这只是个人偏好问题，比如追求尽可能少打字的人会喜欢 `npm t`，追求尽可能少记东西的人会喜欢 `npm run test` （永远不会因为误以为 `npm build` 表示 `npm run build` 而碰到问题），其他人可能会喜欢 `npm test` 这样中庸的选项。
+- 各种 npm 命令的快捷版本，比如上文用到的 `npm i -D`。这些个人觉得不用专门刻意去记。经常输入的命令，可以 `npm help` 一下看看有没有简短版本。不查也没有关系，`npm t` 和 `npm test` 乃至 `npm run test` 的区别绝不是开发效率的瓶颈所在。很多时候这只是个人偏好问题，比如追求尽可能少打字的人会喜欢 `npm t`，追求尽可能少记东西的人会喜欢 `npm run test` （永远不会因为误以为 `npm build` 表示 `npm run build` 而碰到问题），其他人可能会喜欢 `npm test` 这样中庸的选项。
 - `npm xmas` 猜猜输入这个命令会得到什么结果？你可以亲自试一下。提示：这个命令完全没有实用性可言。;-)
 
 题图：[Rubén Bagüés](https://unsplash.com/photos/ZzApzgh5lxo)
