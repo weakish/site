@@ -1,7 +1,10 @@
 @import '../components/constants.css';
 
-.articleContainer {
+:root {
   --article-max-width: 78.4rem;
+}
+
+.articleContainer {
   display: grid;
   grid-template-areas: 'main side';
   grid-template-columns: var(--article-max-width) auto;
@@ -90,10 +93,31 @@
   opacity: 0.8;
 }
 
+.recentArticles {
+  margin-top: 2rem;
+  max-width: var(--article-max-width);
+}
+
+.recentArticles h2 {
+  font-size: 2.0rem;
+}
+.recentArticles ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.recentArticles h3 {
+  font-size: 1.8rem;
+}
+
 .comments {
   margin-top: 2rem;
   font-size: 1.4rem;
   max-width: var(--article-max-width);
+}
+
+.comments h2 {
+  font-size: 2.0rem;
 }
 
 @media (max-width: 1042px) {
@@ -122,6 +146,11 @@
   }
 
   .comments {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .recentArticles {
     padding-left: 1rem;
     padding-right: 1rem;
   }

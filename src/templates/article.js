@@ -4,6 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
+import Link from 'gatsby-link';
 import Layout from '../components/layout';
 import SubscribeForm from '../components/subscribe-form';
 import BackgroundImage from 'gatsby-background-image';
@@ -12,6 +13,7 @@ import articleStyles from './article.module.css';
 
 const Article = ({ data }) => {
   const article = data.markdownRemark;
+  const recentArticles = data.allMarkdownRemark.edges;
   return (
     <Layout>
       <div className={articleStyles.articleContainer}>
@@ -34,7 +36,7 @@ const Article = ({ data }) => {
               {
                 name: 'og:image',
                 content:
-                data.site.siteMetadata.siteUrl +
+                  data.site.siteMetadata.siteUrl +
                   article.frontmatter.coverImage.childImageSharp.fluid.src
               }
             ]}
@@ -47,8 +49,8 @@ const Article = ({ data }) => {
             script={[
               {
                 defer: 1,
-                src: "https://assets.remarkninjia.com/remark-ninjia.js",
-                type: "text/javascript"
+                src: 'https://assets.remarkninjia.com/remark-ninjia.js',
+                type: 'text/javascript'
               }
             ]}
           />
@@ -73,10 +75,22 @@ const Article = ({ data }) => {
         <div className={articleStyles.subscribeBox}>
           <SubscribeForm />
         </div>
-        <div className={articleStyles.comments}>
-          <h2>评论</h2>
-          <div id="remark-ninjia-container"></div>
-        </div>
+      </div>
+      <div className={articleStyles.recentArticles}>
+        <h2>最新文章</h2>
+        <ul>
+          {recentArticles.map(({ node }) => (
+            <li key={node.id}>
+              <Link to={node.fields.slug}>
+                <h3>{node.frontmatter.title}</h3>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className={articleStyles.comments}>
+        <h2>评论</h2>
+        <div id="remark-ninjia-container" />
       </div>
     </Layout>
   );
@@ -111,6 +125,23 @@ export const query = graphql`
     site {
       siteMetadata {
         siteUrl
+      }
+    }
+    allMarkdownRemark(
+      limit: 3
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fields: { pageType: { eq: "article" } } }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+          }
+          fields {
+            slug
+          }
+        }
       }
     }
   }
