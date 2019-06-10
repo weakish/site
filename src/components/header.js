@@ -9,11 +9,8 @@ const Header = ({ siteTitle, description }) => (
       <Link to="/">
         <h1 className={headerStyles.siteName}>{siteTitle}</h1>
       </Link>
-      <a
-        className={headerStyles.submitButton}
-        href="mailto:newfrontendweekly0@163.com"
-      >
-        文章投稿
+      <a className={headerStyles.feed} href="/rss.xml">
+        RSS Feed
       </a>
     </div>
   </nav>

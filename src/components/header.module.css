@@ -30,7 +30,7 @@
   color: var(--text-color1);
 }
 
-.submitButton {
+.feed {
   color: var(--text-color2);
   font-size: 1.6rem;
   border: solid var(--text-grey) 0.5px;
