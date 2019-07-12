@@ -6,7 +6,7 @@ coverImage: "./images/ruben-bagues-102896-unsplash.jpg"
 summary: 分享一些 npm 包管理工具的实用小窍门，希望能够略微提高下前端、Node.js 开发者的生活质量。
 ---
 
-作者： [LeanCloud weakish](https://mmap.page/)
+作者： [LeanCloud weakish](https://leancloud.cn/)
 
 绝大多数前端和 Node.js 开发者每天的日常工作都离不开 npm，不知道你对 npm 的观感如何？如果你觉得 npm 很棒，那么不妨看下这篇文章，说不定其中有你之前没留意过的小窍门，可以让你 npm 用得更顺手。如果你觉得 npm 很糟糕，那也可以看下这篇文章，也许会发现用上一些小技巧，npm 会变得稍微不那么糟糕。
 
