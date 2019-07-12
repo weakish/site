@@ -6,7 +6,7 @@ coverImage: "./images/stephen-frank-492659-unsplash.jpg"
 summary: 2019 年 5 月 GitHub 上比较流行的 9 个和 Android 开发相关的开源项目，包括组件库和开发辅助工具。
 ---
 
-作者： [LeanCloud weakish](https://mmap.page/)
+作者： [LeanCloud weakish](https://leancloud.cn/)
 
 分享 2019 年 5 月 GitHub 上比较流行的 9 个和 Android 开发相关的开源项目，包括对话框、日历、矢量绘图组件，内存泄露检测库，Kotlin 的 linter、mock 库、依赖注入框架等。
 
