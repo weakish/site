@@ -43,13 +43,13 @@ const Article = ({ data }) => {
             link={[
               {
                 rel: 'stylesheet',
-                href: 'https://assets.remarkninjia.com/remark-ninjia.css'
+                href: 'https://assets.rmninja.com/remark-ninjia.css'
               }
             ]}
             script={[
               {
                 defer: 1,
-                src: 'https://assets.remarkninjia.com/remark-ninjia.js',
+                src: 'https://assets.rmninja.com/remark-ninjia.js',
                 type: 'text/javascript'
               }
             ]}
@@ -90,7 +90,7 @@ const Article = ({ data }) => {
       </div>
       <div className={articleStyles.comments}>
         <h2>评论</h2>
-        <div id="remark-ninjia-container" />
+        <div id="remark-ninja-container" />
       </div>
     </Layout>
   );
