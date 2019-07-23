@@ -43,13 +43,13 @@ const Article = ({ data }) => {
             link={[
               {
                 rel: 'stylesheet',
-                href: 'https://assets.rmninja.com/remark-ninjia.css'
+                href: 'https://assets.rmninja.com/remark-ninja.css'
               }
             ]}
             script={[
               {
                 defer: 1,
-                src: 'https://assets.rmninja.com/remark-ninjia.js',
+                src: 'https://assets.rmninja.com/remark-ninja.min.js',
                 type: 'text/javascript'
               }
             ]}
