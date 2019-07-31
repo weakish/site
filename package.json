@@ -32,6 +32,7 @@
     "react-mailchimp-subscribe": "^2.1.0",
     "react-tinyletter": "^0.3.2",
     "react-typography": "^0.16.19",
+    "remark-ninja-react": "^1.0.2",
     "typography": "^0.16.19",
     "typography-theme-moraga": "^0.16.19"
   },

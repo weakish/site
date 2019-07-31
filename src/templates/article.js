@@ -5,10 +5,12 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Link from 'gatsby-link';
+import BackgroundImage from 'gatsby-background-image';
+import Comments from 'remark-ninja-react';
+import 'remark-ninja-react/lib/remark-ninja.css';
+
 import Layout from '../components/layout';
 import SubscribeForm from '../components/subscribe-form';
-import BackgroundImage from 'gatsby-background-image';
-
 import articleStyles from './article.module.css';
 
 const Article = ({ data }) => {
@@ -38,19 +40,6 @@ const Article = ({ data }) => {
                 content:
                   data.site.siteMetadata.siteUrl +
                   article.frontmatter.coverImage.childImageSharp.fluid.src
-              }
-            ]}
-            link={[
-              {
-                rel: 'stylesheet',
-                href: 'https://assets.rmninja.com/remark-ninja.css'
-              }
-            ]}
-            script={[
-              {
-                defer: 1,
-                src: 'https://assets.rmninja.com/remark-ninja.min.js',
-                type: 'text/javascript'
               }
             ]}
           />
@@ -90,7 +79,7 @@ const Article = ({ data }) => {
       </div>
       <div className={articleStyles.comments}>
         <h2>评论</h2>
-        <div id="remark-ninja-container" />
+        <Comments siteId="nextfe.com" threadId={article.fields.slug} />
       </div>
     </Layout>
   );
