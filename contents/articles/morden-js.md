@@ -3,7 +3,7 @@ title: 从今天开始使用这 10 个现代 JS 特性
 date: 2019-08-08
 tags:
 coverImage: "./images/lltq5wvcklpu3ndu9kuk.jpg"
-summary: 最常用的 ES 6+ 新特性：... 操作符、字符串插值、简写属性、方法属性、解构赋值、数组方法、模块、async/await、剪头函数
+summary: 最常用的 ES 6+ 新特性：... 操作符、字符串插值、简写属性、方法属性、解构赋值、数组方法、模块、async/await、箭头函数
 ---
 
 [Chris Noring] 原作，授权 [New Frontend](https://nextfe.com/) 翻译。
